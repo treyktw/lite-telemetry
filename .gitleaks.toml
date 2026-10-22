@@ -1,0 +1,8 @@
+# Extend the default ruleset; only allowlist secret-shaped test strings that are
+# visibly fake (they contain FAKEFAKE).
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Obviously fake secret-shaped fixtures used in tests"
+regexes = ['''FAKE(FAKE)+''']

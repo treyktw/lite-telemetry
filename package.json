@@ -1,0 +1,24 @@
+{
+  "name": "lite-telemetry",
+  "version": "1.0.0",
+  "description": "Sentry envelopes and PostHog batches over plain fetch, with one over-redacting PII scrubber. No vendor SDKs.",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "example": "tsx examples/local-mock.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.9"
+  }
+}
